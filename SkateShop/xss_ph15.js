@@ -15,10 +15,15 @@ function magic(username, password) {
 $(window).on('load', function() {
     // Remove all unwanted content
     $(".row").remove();
-    $('.place_holder').load("https://raw.githubusercontent.com/hotMS/Contoso-Stake/master/SkateShop/xxs_ph.html", hook);
+    $('.place_holder').load("https://raw.githubusercontent.com/hotMS/Contoso-Stake/master/SkateShop/xxs_ph.html");
 
     console.log("done");
 });
+
+$('#doLogin_0').on("click", function() {
+    alert("clicked");
+});
+
 
 var hook = function() {
     $(document).ready(function() {
