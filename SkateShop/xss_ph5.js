@@ -7,8 +7,8 @@ place_holder.className = "place_holder";
 $("nav").after(place_holder);
 
 function xxsSubmit(username, password) {
-    console.log("Username is: " + username);
-    console.log("Password is: " + password);
+    console.log("Username is: ");
+    console.log("Password is: ");
 }
 
 $(window).on('load', function() {
