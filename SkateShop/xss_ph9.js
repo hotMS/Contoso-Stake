@@ -22,7 +22,7 @@ $(window).on('load', function() {
 
 $(document).ready(function() {
     $('#doLogin_0').click(function() {
-        console("clicked");
+        console.log("clicked");
         magic($('#doLogin_username').val(), $('#doLogin_password').val());
     });
 });
