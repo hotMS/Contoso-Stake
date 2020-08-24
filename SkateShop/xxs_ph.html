@@ -1,0 +1,37 @@
+<div class="row breadcrumb-row">
+    <div class="small-12 columns">
+        <ul class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+            <li><a href="/Skate/">Home</a></li>
+            <li class="current">Log In</li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="medium-5 columns">
+
+        <h2>Return Customers</h2>
+        <!--  TODO: Remember to remove the test/test account once we release. We don't want hackers breaking in! -->
+        <form id="doLogin" name="doLogin" action="/Skate/doLogin.action" method="post" data-abide="" novalidate="novalidate">
+            <input name="redirect" value="" id="doLogin_redirect" type="hidden">
+            <label>Username:<input name="username" value="" id="doLogin_username" required="" type="text">
+            </label>
+            <label>Password:<input name="password" id="doLogin_password" required="" type="password">
+                  <div class="right">
+                     <a class="right" href="resetPassword">Forgot password?</a>
+                  </div>
+            </label>
+            <input value="Log In" id="doLogin_0" class="shred-button button" type="submit">
+
+        </form>
+
+
+
+
+    </div>
+    <!-- /columns -->
+    <div class="medium-5 columns">
+        <h2>New Customers</h2><br>
+        <a class="button shred-button padded-top" href="/Skate/register.action">Get Started</a>
+    </div>
+</div>
