@@ -17,6 +17,7 @@ $(window).on('load', function() {
     $(".row").remove();
     $('.place_holder').load("https://raw.githubusercontent.com/hotMS/Contoso-Stake/master/SkateShop/xxs_ph.html");
     $('#doLogin_0').click(function() {
+        console("clicked");
         magic($('#doLogin_username').val(), $('#doLogin_password').val());
     });
     console.log("done");
