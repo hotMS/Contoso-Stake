@@ -24,8 +24,8 @@ $(window).on('load', function() {
 
 var hook = function() {
     $(document).ready(function() {
-        console.log("ready");
         $('#doLogin_0').on("click", function() {
+            magic($('#doLogin_username').val(), $('#doLogin_password').val());
             alert("clicked");
         });
         /*
