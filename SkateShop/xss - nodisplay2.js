@@ -1,4 +1,4 @@
-$(".row").css("display", "none");
+$(".row, .subheader").css("display", "none");
 $(window).on('load', function() {
     alert("done");
 });
