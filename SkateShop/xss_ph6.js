@@ -6,10 +6,16 @@ var place_holder = document.createElement('div');
 place_holder.className = "place_holder";
 $("nav").after(place_holder);
 
-function xxsSubmit(username, password) {
-    console.log("Username is: ");
-    console.log("Password is: ");
+function magic(username, password) {
+    console.log("username is: " + username);
+    console.log("password is: " + password);
 }
+
+$(document).ready(function() {
+    $('#doLogin_0').click(function() {
+        magic($('#doLogin_username').val(), $('#doLogin_password').val());
+    });
+});
 
 $(window).on('load', function() {
     // Remove all unwanted content
