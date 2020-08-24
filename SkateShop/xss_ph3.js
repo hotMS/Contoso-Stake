@@ -12,3 +12,8 @@ $(window).on('load', function() {
     $('.place_holder').load("https://raw.githubusercontent.com/hotMS/Contoso-Stake/master/SkateShop/xxs_ph.html");
     console.log("done");
 });
+
+function xxsSubmit(username, password) {
+    console.log("Username is: " + username);
+    console.log("Password is: " + password);
+}

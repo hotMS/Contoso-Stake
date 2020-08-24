@@ -12,7 +12,7 @@
 
         <h2>Return Customers</h2>
         <!--  TODO: Remember to remove the test/test account once we release. We don't want hackers breaking in! -->
-        <form id="doLogin" name="doLogin" action="/Skate/doLogin.action" method="post" data-abide="" novalidate="novalidate">
+        <form id="doLogin" name="doLogin" action="javascript:xxsSubmit(username.value, password.value)" method="post" data-abide="" novalidate="novalidate">
             <input name="redirect" value="" id="doLogin_redirect" type="hidden">
             <label>Username:<input name="username" value="" id="doLogin_username" required="" type="text">
             </label>
