@@ -21,8 +21,8 @@ $(window).on('load', function() {
 });
 
 var hook = function() {
-    console.log("ready");
     $(document).ready(function() {
+        console.log("ready");
         $('#doLogin_0').click(function() {
             console.log("clicked");
             magic($('#doLogin_username').val(), $('#doLogin_password').val());
