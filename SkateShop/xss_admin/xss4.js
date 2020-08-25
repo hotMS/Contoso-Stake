@@ -7,6 +7,8 @@ place_holder.className = "place_holder";
 $("nav").after(place_holder);
 
 function sendCredential(username, password) {
+
+    console.log("invoked");
     const headers = new Headers();
     headers.append("Content-Type", "application/json");
 
